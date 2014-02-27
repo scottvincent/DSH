@@ -19,3 +19,5 @@ SVGeezy.js 1.0
 Respond.js 1.4.0
 
 Modernizr.js 2.6.3
+
+Fastclick.js 1.0.0
