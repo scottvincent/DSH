@@ -6,18 +6,23 @@ A Website Starting Point built on a Bootstrap 3 framework
 
 Including the things I like to use when I start a project.
 
-Bootstrap 3.1.0
+Bootstrap 3.1.1
 -using Dist build of bootstrap.js
 -using LESS files to compile bootstrap.css
 
-Font Awesome 4.0.3
+JQuery.js 1.11.0
 
-JQuery.js 1.10.2
+Font Awesome 4.0.3
+-Icon Font to replace Bootstrap glyphicons
 
 SVGeezy.js 1.0
+-If browser doesn't support SVG replace all .svg with .png
 
-Respond.js 1.4.0
+Respond.js 1.4.2
+-So old IE will be responsive
 
-Modernizr.js 2.6.3
+Modernizr.js 2.7.1
+-To detect touchscreens
 
 Fastclick.js 1.0.0
+-To remove the 300ms delay on touch screen browsers
