@@ -21,7 +21,7 @@ SVGeezy.js 1.0
 Respond.js 1.4.2
 	*So old IE will be responsive
 
-Modernizr.js 2.7.1
+Modernizr.js 2.8.1
 	*To detect touchscreens
 
 Fastclick.js 1.0.0
