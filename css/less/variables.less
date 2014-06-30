@@ -2,10 +2,8 @@
 // Variables
 // --------------------------------------------------
 //== Custom
-@chosenColor: #142850;
-
-@themeColor: #d69c1a;//contrast(@chosenColor, @chosenColor, hsl(hue(@chosenColor), saturation(@chosenColor), 43%), 43%);
-@themeAccent: #142850;//contrast(spin(@themeColor, 180), spin(@themeColor, 180), hsl(hue(spin(@themeColor, 180)), saturation(@themeColor), 43%), 43%);  
+@themeColor: #363F40;//contrast(@chosenColor, @chosenColor, hsl(hue(@chosenColor), saturation(@chosenColor), 43%), 43%);
+@themeAccent: #14191B;//contrast(spin(@themeColor, 180), spin(@themeColor, 180), hsl(hue(spin(@themeColor, 180)), saturation(@themeColor), 43%), 43%);  
 @themeText: #fff;
 @themeDesaturate: desaturate(@themeColor, 0%);
 
@@ -26,9 +24,9 @@
 @gray-light:             lighten(#000, 46.7%); // #777
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #428bca;
+@brand-primary:         @themeColor;//#428bca;
 @brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
+@brand-info:            @themeAccent;//#5bc0de;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
@@ -38,12 +36,12 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               @themeAccent;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            #fff;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            #fff;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 
@@ -52,7 +50,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -75,8 +73,8 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    inherit;
-@headings-font-weight:    500;
+@headings-font-family:    "Fjalla One", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headings-font-weight:    400;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
